@@ -19,3 +19,4 @@ en:
   filter_button: "Filter"
   view_app_notifications: "View notifications"
   unreachable_faye_server: "Your Faye server is unreachable"
+  mark_this_issue_all_notify_as_seen: "Mark all notify of this issue as seen"
