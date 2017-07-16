@@ -3,6 +3,7 @@
 	<div class="notification-container <%= 'new' if !notification.viewed %>">
 		<div class="notification-title">
 			<%= avatar(notification.issue.author, :size => "24") %>
+			<strong> <%= notification.issue.subject %> </strong><br/>
 			<%= l(:text_issue_added, :id => "##{notification.issue.id}", :author => h(notification.issue.author)) %>
 		</div>
 		<div class="notification-date"><%= format_time(notification.created_on) %></div>
