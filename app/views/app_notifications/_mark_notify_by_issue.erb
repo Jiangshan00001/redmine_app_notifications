@@ -1,0 +1,8 @@
+<%
+  mnum=AppNotification.where(:recipient_id => User.current.id, :viewed => false,:issue_id => issue.id  ).count.to_i
+  if mnum>0
+%>
+<%= button_to l(:mark_this_issue_all_notify_as_seen)+":"+mnum.to_s,:controller=>"app_notifications", action: "view_by_issue_id", :issue_id => issue.id %>
+<%
+  end
+%>
